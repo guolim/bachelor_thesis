@@ -1,0 +1,70 @@
+﻿\documentclass[capnocolon,titlechinese]{ustcthesis}
+\usepackage{metalogo}
+%\usepackage{floatrow}
+\usepackage{verbatim}
+
+% 设置图形文件的搜索路径
+\graphicspath{{chapter/}{figures/}}
+\begin{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% 封面部分
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  % 中文封面内容
+  %如果使用\makeseparatetitle命令生成扉页，当中文标题过长时可以将多余的标题放在\titletail{}中
+  \title{基于图像通道相关性的}
+  \titletail{彩色图像可逆隐藏算法研究}
+  \entitle{Reversible Data Hiding Method for Color Image Based on Inter-Channel Correlation}
+  %全角空格可以正常输出
+  \author{马国力}
+  \enauthor{Guoli Ma}
+  \department{信息学院\ 信息安全专业}
+  \No{PB10210141}
+  \tutor{张卫明\ 教授}
+  \entutor{Prof.Weiming Zhang}
+  \cntime{二〇一四年五月}
+  \entime{May,2014}
+  %生成封面（制本厂要求的格式）
+  \makecover
+  % 扉页形式
+  %生成中英文合并的扉页
+  \maketitle
+  %生成中英文分开的扉页
+  \makeseparatetitle
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% 前言部分
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\frontmatter
+
+  % 致谢
+  \include{chapter/thanks}
+  % 目录
+
+  \tableofcontents
+  % 摘要
+  \include{chapter/abstract}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% 正文部分
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\mainmatter
+  \include{chapter/chap-intro}
+  \include{chapter/chap-related}
+  \include{chapter/chap-proposed}
+  \include{chapter/chap-conclusion}
+  \include{chapter/chap-bib}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% 附件部分
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\backmatter
+
+  % 参考文献
+  % 使用 BibTeX
+  \phantomsection
+  \addcontentsline{toc}{chapter}{参考文献}
+  \bibliography{bib/tex}
+  \nocite{*} % for every item
+
+\end{document}
