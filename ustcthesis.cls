@@ -44,6 +44,9 @@
 \RequirePackage{xcolor}
 \RequirePackage{multicol}
 \RequirePackage{multirow}
+\RequirePackage{enumitem}
+\RequirePackage{algorithm}
+\RequirePackage{algorithmic}
 
 %Caption no colon
 \ifustc@CaptionNoColon
@@ -318,7 +321,7 @@
 \newtheorem{theorem}{\textbf{\hspace{0.7pt}定理}}[section] 
 \newtheorem{lemma}{\textbf{\hspace{0.7pt}引理}}[section] 
 \newtheorem{example}{\textbf{\hspace{0.7pt}例}}[section]             
-\newtheorem{algorithm}{\textbf{\hspace{0.7pt}算法}}[section] 
+%\newtheorem{algorithm}{\textbf{\hspace{0.7pt}算法}}[section] 
 \newtheorem{definition}{\textbf{\hspace{0.7pt}定义}}[section] 
 \newtheorem{axiom}{\textbf{\hspace{0.7pt}公理}}[section] 
 \newtheorem{property}{\textbf{\hspace{0.7pt}性质}}[section] 

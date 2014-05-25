@@ -1,0 +1,59 @@
+﻿
+\begin{cnabstract}
+信息隐藏技术是一种将数据嵌入到各种载体中的技术，在现实生活中得到了广泛的应用。而
+可逆信息隐藏则是信息隐藏技术的一个特别的分支，它不仅关注要嵌入的用户数据，更关注
+载体本身。它要求载体在提取出被嵌入的消息后，仍然能被完整的恢复。这就对消息的嵌入
+方式提出了更高的要求。而正是由于可逆信息隐藏的这种特性，它在医学图像保护、载体篡
+改认证和恢复、数字媒体版权保护中得到了广泛的应用。
+\par
+可逆隐藏技术在过去十几年间得到了长足的发展。学者们针对数字图像、视频、音频等载体
+提出了各种各样的可逆隐藏算法。其中研究的热点集中在数字灰度图像邻域。但是在现实生
+活中，使用最多的是彩色图像。现阶段针对彩色图像的可逆隐藏文献很少，针对这种情况，
+本论文从彩色图像的通道相关性出发，对彩色图像的可逆隐藏技术进行了研究，提出了一种
+针对彩色图像的可逆隐藏算法。
+\par
+算法首先结合彩色图像的通道相关性，使用了一种利用通道内预测误差进行通道间二次预测
+的新预测方法，实验表明，这种预测方法能比以往算法得到更陡峭、熵更小的预测误差直方
+图。随后，论文介绍了一种新的排序算法。同以往排序算法不同，该算法通过对当前像素的
+预测误差概率分布进行预测，兼顾了邻域的像素的预测差值和方差，能更好的反映像素的纹
+理复杂度。最后通过实验比较发现，所提出的算法在嵌入容量和图像质量上比以往算法有了
+一定的提升。
+
+\cnkeywords{可逆信息隐藏，通道相关性，图像预测}
+\end{cnabstract}
+
+
+\begin{abstract}
+Information hiding is a widely used technology that embeds data into different 
+digital carriers. Reversible information hiding, as a special branch of         
+information hiding, it is not only concerned about the user's embedding data,   
+but also pay attention to the carriers themselves. It requires the carriers to  
+be completely recovered after extracting the embedded message. This will put    
+forward higher requirements for the ways of data embedding. But because of this 
+feature, reversible information hiding has been widely used in medical image    
+protection, authentication and tamper carrier recovery, and digital media      
+copyright protection.                                                           
+\par
+In the last ten years, reversible hiding has been considerably developed.      
+Scholars have proposed a variety of reversible hiding algorithms for digital    
+images, digital videos, audios, and other carriers. And the hot spot is         
+concentrated on digital gray-scale images. But in real life, it is the color    
+images that are widely used. In recent days, reversible data hiding for color   
+images is a rarely studied topic. So this thesis will focus on reversible data
+hiding method for color images. Based on the inter-channel correlation of color
+image, a novel inter-channel prediction method is examined and a corresponding
+reversible data hiding algorithm is proposed.           
+\par
+In the proposed method, the prediction error is obtained by an inter-channel   
+secondary prediction using the prediction errors of two independent             
+channels. Experiments show that this prediction method can produce shaper       
+Prediction-Error-Histogram (PEH). Then, we will introduce a new pixel-sorting   
+algorithm that will make predictions for the probability distribution of        
+prediction error of current pixel. It can utilize both differences and the         
+prediction variances of neighborhood pixels. So it will reflect the texture
+complexity of current pixel better. Finally, as the experiments demonstrated,
+the proposed algorithm has some improvement over the previous algorithm on both
+the embedding capacity and image quality.
+
+\keywords{Reversible Data Hiding, Inter-Channel Correlation, Image Prediction}
+\end{abstract}
